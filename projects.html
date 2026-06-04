@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Liu | Projects</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+
+function toggleText(button) {
+
+    const paragraph =
+        button.previousElementSibling;
+
+    const dots =
+        paragraph.querySelector(".dots");
+
+    const moreText =
+        paragraph.querySelector(".more-text");
+
+    if (moreText.style.display === "inline") {
+
+        moreText.style.display = "none";
+
+        dots.style.display = "inline";
+
+        button.textContent = "Read More";
+
+    } else {
+
+        moreText.style.display = "inline";
+
+        dots.style.display = "none";
+
+        button.textContent = "Read Less";
+
+    }
+}
+
+</script>
+
+<body>
+
+    <nav>
+        <div class="logo">Yuquan (Olivia) Liu</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="banner.jpg" alt="Banner">
+    </section>
+
+    <div class="page-layout">
+
+    <aside class="profile">
+
+        <img src="profileHolder.png" alt="Profile">
+
+        <h2>Yuquan (Olivia) Liu</h2>
+
+        <p>B.S. Computer Science</p>
+
+        <p>University of Maryland</p>
+
+        <div class="links">
+
+            <a href="https://github.com/nvmjustrain" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/olivia-liu-bb05342b5/" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="Yuquan_Liu_-_Resume.pdf" target="_blank">
+                Resume
+            </a>
+
+        </div>
+
+    </aside>
+
+    <main class = "main-content">
+        <div class="page-header">
+            <h1>Projects</h1>
+            <p>A collection of projects and research experiences.</p>
+        </div>
+
+    <div class="project-container">
+        <div class="project-grid">
+            <div class="cover">
+                <img src="climatecomputing.png">
+            </div>
+            <div class="content">
+                <h2>Climate Computing Research</h2>
+                <p class = "project-description">
+                    Participated in the UMD FIRE Climate Computing research program, where I 
+                    explored how computational methods can be used to investigate complex 
+                    climate systems. Working with large-scale datasets, 
+                    <span class="dots">...</span>
+
+                    <span class="more-text">
+                    scientific models, and high-performance 
+                    computing resources strengthened both my technical skills and my interest in research, ultimately 
+                    motivating my pursuit of future graduate studies.
+                    </span>
+                </p>
+
+                <button class="read-more-btn" onclick="toggleText(this)">
+                    Read More
+                </button>
+                <h6> August 2025 - Current Undergraduate Researcher<h6>
+            </div>
+        </div>
+
+        <div class="project-grid">
+            <div class="cover">
+                <img src="blueprint.png">
+            </div>
+            <div class="content">
+                <h2>MIT Blueprint Hackathon</h2>
+                <p class = "project-description">
+                    Participated in MIT Blueprint 2024, a weekend-long learnathon and hackathon hosted by MIT. Collaborated 
+                    with a team to design and develop a software project from concept to implementation 
+                    while applying 
+                    <span class="dots">...</span>
+
+                    <span class="more-text">
+                    programming, problem-solving, and teamwork skills in a fast-paced environment. 
+                    The experience strengthened my interest in software development and exposed me to collaborative project 
+                    building and rapid prototyping.
+                    </span>
+                </p>
+                <button class="read-more-btn" onclick="toggleText(this)">
+                    Read More
+                </button>
+                <h6>November 2024<h6>
+            </div>
+        </div>
+        
+        <div class="project-grid">
+            <div class="cover">
+                <img src="java.png">
+            </div>
+            <div class="content">
+                <h2>Java Software Development Projects</h2>
+                <p class = "project-description">
+                    Developed a variety of Java applications focused on object-oriented programming, data structures, and 
+                    algorithmic problem solving. Through these projects, I gained experience designing scalable software 
+                    systems
+                    <span class="dots">...</span>
+
+                    <span class="more-text">
+                    , implementing custom data structures, debugging complex programs, and applying software 
+                    engineering principles to build efficient and maintainable solutions.
+                    </span>
+                </p>
+                <button class="read-more-btn" onclick="toggleText(this)">
+                    Read More
+                </button>
+                <h6>2025 Fall - 2026 Summer<h6>
+            </div>
+        </div>
+        
+        <div class="project-grid">
+            <div class="cover">
+                <img src="beaver.png">
+            </div>
+            <div class="content">
+                <h2>MIT Beaver Works Institute – Autonomous RACECAR</h2>
+                <p class = "project-description">
+                    Selected for MIT Beaver Works Summer Institute's Autonomous RACECAR program, an intensive project-based 
+                    experience focused on autonomous vehicle technologies. Through simulation-based 
+                    <span class="dots">...</span>
+
+                    <span class="more-text">
+                    development and team 
+                    collaboration, I explored topics including computer vision, control systems, localization, and path planning 
+                    while designing algorithms for autonomous navigation in dynamic environments.
+                    </span>
+                </p>
+                <button class="read-more-btn" onclick="toggleText(this)">
+                    Read More
+                </button>
+                <h6>November 2024<h6>
+            </div>
+
+        </div>
+
+        <div class="project-grid">
+            <div class="cover">
+                <img src="web.png">
+            </div>
+            <div class="content">
+                <h2>Personal Portfolio & Web Development Projects</h2>
+                <p class = "project-description">
+                    Designed and developed responsive websites using HTML, CSS, and JavaScript, including a personal portfolio 
+                    website and custom websites for friends. These projects strengthened my skills in front-end development, 
+                    user-centered 
+                    <span class="dots">...</span>
+
+                    <span class="more-text">
+                    design, and creating intuitive, visually appealing web experiences.
+                    </span>
+                </p>
+                <button class="read-more-btn" onclick="toggleText(this)">
+                    Read More
+                </button>
+                <h6>June - July 2026<h6>
+            </div>
+
+        </div>
+
+    </div>
+    </main>
+
+</body>
+
+</html>
